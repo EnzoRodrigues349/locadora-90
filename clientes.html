@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clientes - Video Club Manager</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="monitor"><section class="screen">
+<div class="screen-header"><h1>Cadastro de Clientes</h1><a class="text-link" href="index.html">[ Voltar ao menu ]</a></div>
+<div id="aviso-cliente" class="notice"></div>
+<form id="form-cliente">
+  <div class="grid">
+    <div class="form-group full"><label for="cliente-nome">Nome:</label><input id="cliente-nome" required></div>
+    <div class="form-group full"><label for="cliente-endereco">Endereço:</label><input id="cliente-endereco"></div>
+    <div class="form-group"><label for="cliente-cpf">CPF:</label><input id="cliente-cpf" required></div>
+    <div class="form-group"><label for="cliente-telefone">Telefone:</label><input id="cliente-telefone" required></div>
+  </div>
+  <div class="actions">
+    <button id="btn-salvar-cliente" type="submit">F1 - Salvar</button>
+    <button id="btn-cancelar-edicao" type="button">F2 - Cancelar edição</button>
+  </div>
+</form>
+<div class="toolbar" style="margin-top:28px"><input id="busca-cliente" type="search" placeholder="Pesquisar nome, CPF ou telefone"></div>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>Nome</th><th>CPF</th><th>Telefone</th><th>Endereço</th><th>Pendentes</th><th>Ações</th></tr></thead>
+<tbody id="tabela-clientes"></tbody>
+</table></div>
+</section></main>
+<script src="app.js"></script>
+</body></html>

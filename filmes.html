@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filmes - Video Club Manager</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="monitor"><section class="screen">
+<div class="screen-header"><h1>Cadastro de Filmes</h1><a class="text-link" href="index.html">[ Voltar ao menu ]</a></div>
+<div id="aviso-filme" class="notice"></div>
+<form id="form-filme">
+<div class="grid">
+  <div class="form-group full"><label for="filme-titulo">Título:</label><input id="filme-titulo" required></div>
+  <div class="form-group"><label for="filme-genero">Gênero:</label>
+    <select id="filme-genero" required>
+      <option value="">Selecione</option><option>Ação</option><option>Aventura</option><option>Comédia</option>
+      <option>Drama</option><option>Ficção Científica</option><option>Terror</option><option>Romance</option><option>Animação</option>
+    </select>
+  </div>
+  <div class="form-group"><label for="filme-ano">Ano:</label><input id="filme-ano" type="number" min="1900" max="2099" required></div>
+  <div class="form-group"><label for="filme-classificacao">Classificação:</label><input id="filme-classificacao"></div>
+  <div class="form-group"><label for="filme-estoque">Quantidade em estoque:</label><input id="filme-estoque" type="number" min="1" value="1" required></div>
+</div>
+<div class="actions"><button id="btn-salvar-filme" type="submit">F1 - Salvar</button><button id="btn-cancelar-filme" type="button">F2 - Cancelar edição</button></div>
+</form>
+<div class="toolbar" style="margin-top:28px"><input id="busca-filme-cadastro" type="search" placeholder="Pesquisar título ou gênero"></div>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>Título</th><th>Gênero</th><th>Ano</th><th>Class.</th><th>Estoque</th><th>Disponíveis</th><th>Ações</th></tr></thead>
+<tbody id="tabela-filmes"></tbody>
+</table></div>
+</section></main>
+<script src="app.js"></script>
+</body></html>

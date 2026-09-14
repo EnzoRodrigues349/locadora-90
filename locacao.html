@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locação - Video Club Manager</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="monitor"><section class="screen">
+<div class="screen-header"><h1>Aluguel de Filmes</h1><a class="text-link" href="index.html">[ Voltar ao menu ]</a></div>
+<div id="aviso-locacao" class="notice"></div>
+<form id="form-locacao">
+<div class="grid">
+  <div class="form-group full"><label for="locacao-cliente">Cliente:</label><select id="locacao-cliente" required></select></div>
+  <div class="form-group full"><label for="locacao-filme">Filme:</label><select id="locacao-filme" required></select></div>
+  <div class="form-group"><label for="locacao-data">Data da locação:</label><input id="locacao-data" type="date" required></div>
+  <div class="form-group"><label for="locacao-devolucao">Previsão de devolução:</label><input id="locacao-devolucao" type="date" required></div>
+</div>
+<div class="actions"><button type="submit">Confirmar locação</button><button type="reset">Cancelar</button></div>
+</form>
+<h2 style="margin-top:34px">Locações em aberto</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>ID</th><th>Cliente</th><th>Filme</th><th>Locação</th><th>Prevista</th><th>Status</th><th>Multa atual</th></tr></thead>
+<tbody id="tabela-locacoes"></tbody>
+</table></div>
+</section></main>
+<script src="app.js"></script>
+</body></html>

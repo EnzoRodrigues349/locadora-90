@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Club Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="monitor">
+<section class="screen">
+  <h1 class="terminal-title">Video Club Manager - Sistema de Locação</h1>
+
+  <div class="dashboard">
+    <div class="stat">Clientes<strong id="total-clientes">0</strong></div>
+    <div class="stat">Filmes<strong id="total-filmes">0</strong></div>
+    <div class="stat">Locações abertas<strong id="locacoes-abertas">0</strong></div>
+    <div class="stat">Devoluções<strong id="locacoes-finalizadas">0</strong></div>
+  </div>
+
+  <div class="simulation-panel">
+    <h2>Simulação da locadora</h2>
+    <p>Data virtual do sistema: <span class="clock" id="data-virtual"></span> | Atrasadas: <strong id="atrasadas">0</strong></p>
+    <div class="actions">
+      <button id="btn-simular-movimento" type="button">Simular movimento</button>
+      <button id="btn-avancar-dia" type="button">Avançar 1 dia</button>
+      <button id="btn-reset-demo" class="warning" type="button">Restaurar demonstração</button>
+    </div>
+    <div id="simulation-log" class="simulation-log">A locadora já foi iniciada com clientes, filmes e locações de demonstração.</div>
+  </div>
+
+  <nav class="menu">
+    <a href="clientes.html">1. Cadastro de Clientes</a>
+    <a href="filmes.html">2. Cadastro de Filmes</a>
+    <a href="locacao.html">3. Aluguel de Filmes</a>
+    <a href="devolucao.html">4. Devolução</a>
+    <a href="acervo.html">5. Consulta de Acervo</a>
+  </nav>
+
+  <div class="prompt-line">
+    <label for="menu-opcao">Digite sua opção:</label>
+    <input id="menu-opcao" class="option-input" inputmode="numeric" maxlength="1" autocomplete="off">
+    <button id="btn-menu-executar" type="button">Enter</button>
+  </div>
+  <p id="menu-msg" class="small">Digite de 1 a 5 e pressione Enter.</p>
+</section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
