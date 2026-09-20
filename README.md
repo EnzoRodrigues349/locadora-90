@@ -1,38 +1,20 @@
-# Video Club Manager - Simulação Completa
+@ Video Club Manager - Sistema de Locação
 
-Projeto de portfólio em HTML, CSS e JavaScript puro, inspirado em locadoras dos anos 90.
+Projeto de portfólio desenvolvido em HTML, CSS e JavaScript, simulando o funcionamento de uma locadora de filmes.
 
-## O que já vem pronto
+O sistema permite realizar cadastros de clientes e filmes, controlar aluguéis e devoluções, consultar o acervo e acompanhar a movimentação da locadora por meio de uma simulação de passagem de dias.
 
-- 15 filmes nostálgicos dos anos 90
-- 6 clientes fictícios
-- locações abertas e devoluções já simuladas
-- uma locação atrasada para testar multa
-- menu numérico funcional: digite 1 a 5 e pressione Enter
-- cadastro, edição, exclusão e pesquisa de clientes
-- cadastro, edição, exclusão e pesquisa de filmes
-- controle de estoque
-- aluguel e devolução
-- multa automática de R$ 2,00 por dia de atraso
-- histórico de devoluções
-- consulta do acervo
-- dashboard
-- data virtual
-- botão "Simular movimento" para criar aluguel ou devolução aleatória
-- botão "Avançar 1 dia" para testar atrasos
-- botão para restaurar a demonstração
-- localStorage
-- layout responsivo
+## Tecnologias
 
-## Publicação no GitHub Pages
+- HTML
+- CSS
+- JavaScript
 
-O `index.html` está na raiz. Envie todos os arquivos e pastas mantendo:
+## Funcionalidades
 
-- index.html
-- clientes.html
-- filmes.html
-- locacao.html
-- devolucao.html
-- acervo.html
-- css/style.css
-- js/app.js
+- Cadastro de clientes
+- Cadastro de filmes
+- Aluguel de filmes
+- Devolução de filmes
+- Consulta do acervo
+- Simulação de movimentação e atrasos
